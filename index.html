@@ -34,100 +34,64 @@
 		a:hover { color: #888; }
 		a:active { color: #555; }
 
-		.i { font-style: italic; }
+		header { overflow: auto; }
+		h1 { font-size: 70px; }
+		ul { list-style-type: none; overflow: auto; }
+		li { display: inline; }
+
+		.i { font-style: italic;  }
 
 		h1, h2, ul, #skills p {
 			margin: 0px;
 			padding: 0px;
 		}
 
-		h1 {
-			font-size: 70px;
-			font-weight: bold;
-		}
-
-		#title div {
-			clear: left;
-		}
-
-
 		h2 {
-			font-size: 20px;
+			font-size: 24px;
 			font-weight: normal;
 		}
 
-		#email {
-			font-size: 15px;
-			font-style: italic;
-			margin-top: 5px; 
-		}
-
-		header {
-			height: 225px;
-		}
-
-		header>div {
+		header > div {
 			float: left;
-		}
-
-		#avatar {
-			margin-right: 25px;
-		}
-
-		ul {
-			list-style-type: none;
 		}
 
 		section {
-			margin-left: 200px;
 			line-height: 25px;
+			clear: both;
 		}
 
-		#download > li {
-			display: inline;
-			margin-right: 5px;
-		}
-
-		#skills {
-			overflow: hidden;
-			width: 100%;
-			margin: 5% 0% 5% 0%;
-		}
-		#skills li {
-			width: 175px;
-			height: 22px;
+		#skills > li {
 			float: left;
-			margin: 0px 0px 18px 40px;
+			height: 25px;
+			margin-left: 40px;
+			margin-bottom: 18px;
+			max-width: 200px;
 		}
+
 		#skills div {
 			font-size: 12px;
 			color: #444;
-			margin: 0px 0px 4px;
 		}
 		#skills p {
 			width: 200px;
-			height: 4px;
+			height: 4px;http://www.youtube.com/watch?v=WMAM-nXsE_s
 			background-color: #eee;
 		}
-		#skills p span {
+		span {
 			display: block;
 			height: 4px;
-			background-color: #9b9b9b;
+			background-color: #999;
 		    -webkit-transition: width 1s ease-in-out;
 		    transition: width 1s ease-in-out;
 		}
-		#skills p:hover > span { width: 0px !important; }
+		.empty span { width: 0px !important; }
 	</style>
-	<script type="text/javascript">
-		window.onload = function() {
-			// $('.skills li #skills p span').each(function(index, element) { $(this).animate({width: $(this).attr('title')+'%'}, 1500); });
-		};
-	</script>
+	<script type="text/javascript"> window.onload = function() { document.getElementById("skills").className = ""; }; </script>
 </head>
 <body>
 	<header>
-		<div id="avatar"><img src="images/4.png" /></div>
-		<div id="title">
+		<img src="images/4.png" style="float: left;" />
+		<div>
 			<h1>Lance Pioch</h1>
 			<h2>Programmer &amp; Entrepreneur</h2>
 			<a class="i" href="mailto:lance@lancepioch.com">lance@lancepioch.com</a>
