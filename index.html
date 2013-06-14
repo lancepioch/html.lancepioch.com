@@ -39,7 +39,8 @@
 		ul { list-style-type: none; overflow: auto; }
 		li { display: inline; }
 
-		.i { font-style: italic;  }
+		#email, #resume { font-style: italic;  }
+		#resume { margin: 25px 0px 10px 0px; }
 
 		h1, h2, ul, #skills p {
 			margin: 0px;
@@ -90,17 +91,17 @@
 </head>
 <body>
 	<header>
-		<img src="images/4.png" style="float: left;" />
+		<img src="images/4.png" />
 		<div>
 			<h1>Lance Pioch</h1>
 			<h2>Programmer &amp; Entrepreneur</h2>
-			<a class="i" href="mailto:lance@lancepioch.com">lance@lancepioch.com</a>
+			<a id="email" href="mailto:lance@lancepioch.com">lance@lancepioch.com</a>
 		</div>
 	</header>
 	<section>
 		<p>Welcome to my personal website. I am currently a student at Wittenberg University. I am studying for a Bachelor's of Science in Computer Science focusing on Mathematics, Business, and Music.</p>
 		<p>I have been programming since 2004 and will continue to do so as a hobby and through my current and future work. I have experience with very many common programming languages and am most fluent in the following.</p>
-		<ul id="skills">
+		<ul id="skills" class="empty">
 			<li>
 			   <div>C#</div>
 			   <p><span style="width: 95%;"></span></p>
